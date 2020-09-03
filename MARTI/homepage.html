@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" type="text/css" href="css_web_design_project.css">
+</head>
+<body>
+
+	
+<table border="0">
+  <tr>
+    <td>
+      <a class="active" href="homepage.html"> <img src="logo pc.png"> </a>
+    </td>
+    <td>
+      <h2>Punta Carretas Shopping</h2>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <ul class="navBar">
+        <li> <a class="active2" href="Homepage.html"> <img src="HOME-logo.jpg" width="100%"> </a> 
+       </li>
+        <li>
+          <a class="active2" href="locales.html"> <img src="locales-colorPARAwebsite.jpg" width="100%"> </a> 
+        </li>
+        <li>
+           <a class="active2" href="promotions.html"> <img src="ppromociones.jpg" width="100%"> </a> 
+        </li>
+        <li>
+           <a class="active2" href="maps.html"> <img src="Mapa_2.jpg" width="100%"> </a> 
+        </li>
+        <li>
+           <a class="active2" href="estacionamiento.html"> <img src="EstacionarWeb.png" width="100%"> </a> 
+        </li>
+    </ul>
+  </td>
+
+
+    <td>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Punta_carretas_primera.png" style="width: 100%" >
+          <div class="text">Punta Carretas Shopping</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="horizantal_del_día_del_niño.png" style="width:100%">
+          <div class="text">Día del niño</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Acceso_ con_nueva_normalidad.png" style="width:100%">
+          <div class="text"> </div>
+        </div>
+
+    </div>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+    </td>
+  </tr>
+</table>
+
+
+<table width="100%" border="0">
+  <tr rowspan="3">
+    <td width="1/3" height="1/3">
+      
+      <img src="cine-color.jpg"  width="100%" class="hi" >
+
+    </td>
+    <td width="1/3" height="1/3">
+      <img src="programas-color.jpg" width="100%" class="hi">
+    </td>
+    <td width="1/3" height="1/3">
+      <img src="logo_imagen_pc.png" width="90%"  class="hi">
+    </td>
+  </tr>
+
+ <tr class="tdr">
+   <td colspan="2">
+     <p >
+       Punta Carretas Shopping
+     </p>
+   </td>
+   <td >
+     <p>
+       Teléfono: 27116940
+     </p>
+   </td>
+ </tr>
+</table>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
